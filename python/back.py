@@ -33,7 +33,7 @@ def crack_hash(hash_value, hash_type, retry):
         "-d", "1",
         '-o', 'output.txt',
         hash_value,
-        "wordlist.txt",
+        "rockyou.txt",
     ]
 
     result = run_command(command)
@@ -50,7 +50,7 @@ def crack_hash(hash_value, hash_type, retry):
             "-r", "rules/best64.rule",
             '-o', 'output.txt',
             hash_value,
-            "wordlist.txt",
+            "rockyou.txt",
         ]
 
         result = run_command(command)
@@ -66,7 +66,7 @@ def crack_hash(hash_value, hash_type, retry):
             "-r", "rules/rockyou-30000.rule",
             '-o', 'output.txt',
             hash_value,
-            "wordlist.txt",
+            "rockyou.txt",
         ]
         result = run_command(command)
 
